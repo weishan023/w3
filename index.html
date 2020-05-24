@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三週作業</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset_s.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function() {
+            //获取浏览器宽度
+            var _width = $(window).width();
+            if (_width < 768) {
+                //直接为该div添加百w1024样式,会覆盖前一个样式
+                $(".navMenu").hide()
+                $("nav").addClass("phoneNav");
+                $(".lines").removeClass("d-none");
+                $(".line4").click(function() {
+                    if ($("nav").hasClass("click")) {
+                        $("nav").removeClass("click");
+                        $(".navMenu").fadeOut();
+                    } else {
+                        $("nav").addClass("click");
+                        $(".navMenu").fadeIn();
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <header class="AA0601">
+        <nav>
+            <div class="navUl dflex-aic">
+                <ul class="mr-auto">
+                    <li><a href="" target="_blank"></a><img src="images/footer-new.png"></li>
+                    <li class="lines ml-auto d-none">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                        <div class="line4"></div>
+                    </li>
+                </ul>
+                <ul class="navMenu dflex">
+                    <li><a href="" target="_blank">系列鏡框</a></li>
+                    <li><a href="" target="_blank">門市據點</a></li>
+                    <li><a href="" target="_blank">部落格</a></li>
+                    <li><a href="" target="_blank">常見問題</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="bannerImg"><img class="d-b" src="images/68.png" alt="banner大圖"></div>
+        <div class="h1_ab">
+            <h1>
+                <sapn class="span">Promise-Desert 2020 早春系列</sapn>看得清，才能看得遠</h1>
+        </div>
+    </div>
+    <div class="features pink">
+        <div class="container">
+            <h2>用專業的心，做專業的事</h2>
+            <ul class="features_ul dflex-jcsb df-wrap">
+                <li>
+                    <div class="dflex-col df-aic"><img src="images/features01.svg" alt="">
+                        <h4>單一價格</h4>
+                        <p>無論任何度數皆不需追加費用 即可擁有適合自己的薄型球面 鏡片。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dflex-col df-aic"><img src="images/features02.svg" alt="">
+                        <h4>20 分鐘即可取件</h4>
+                        <p>為了您的寶貴時間著想，以豐 富專業知識與技術將結帳到交 件的時間縮減至最快 20 分鐘 即可完成。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dflex-col df-aic"><img src="images/features03.svg" alt="">
+                        <h4>安心售後服務</h4>
+                        <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="dflex-col df-aic"><img src="images/features04.svg" alt="">
+                        <h4>關於鏡片</h4>
+                        <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="classic pb60">
+        <div class="container">
+            <h2>經典系列鏡框</h2>
+            <ul class="classic_ul">
+                <li class="dflex-aic">
+                    <!--以下必須 用div裝img 才能讓img隨divFlex縮放-->
+                    <div class="df-img100"><img src="images/classic01.png" alt=""></div>
+                    <div class="icon"><img class="d-ib" src="images/classic_icon01.svg" alt="">
+                        <h3 class="d-ib">OPTICAL</h3>
+                    </div>
+                </li>
+                <!-- 如果如下，沒有用div包裹，其中的img無法隨著divFlex去縮放-->
+                <li class="dflex-aic">
+                    <div class="icon"><img class="d-ib" src="images/classic_icon02.svg" alt="">
+                        <h3 class="d-ib">SUNGLASSES</h3>
+                    </div>
+                    <div class="df-img100"><img src="images/classic02.png" alt=""></div>
+                </li>
+                <li class="dflex-aic">
+                    <div class="df-img100"><img src="images/classic03.png" alt=""></div>
+                    <div class="icon"><img class="d-ib" src="images/classic_icon03.svg" alt="">
+                        <h3 class="d-ib">FUNCTIONAL</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="joint">
+        <div class="container13">
+            <h2 class="t_white">聯名設計鏡框</h2>
+            <div class="jointBox-top dflex">
+                <div class="b-transparent"><img src="images/joint01.png" alt=""></div>
+                <div class="dflex-col b-transparent">
+                    <div class="bb-transparent"><img src="images/joint02.png" alt=""></div>
+                    <div class="dflex">
+                        <div class="br-transparent"><img src="images/joint03.png" alt=""></div>
+                        <div class="dflex-col">
+                            <div class="bb-transparent"><img src="images/joint04.png" alt=""></div>
+                            <div class="h100 boxS ml-auto">
+                                <div class="w317 h100 dflex-aic">
+                                    <div class="whitebox"><span>MORE</span><img class="nowidth100 d-ib" src="images/joint06.svg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="joint_m dflex-jcsb df-img100">
+                <div><img src="images/joint07.png" alt="">
+                    <h5 class="poa-center">Double A+</h5>
+                </div>
+                <div><img src="images/joint08.png" alt="">
+                    <h5 class="poa-center">YOUTH</h5>
+                </div>
+            </div>
+            <h2 class="t_white">顧客推薦</h2>
+            <ul class="joint_e dflex-jcsb df-wrap df-img100">
+                <li class="joint_list dflex-col"><img src="images/jointE01.png" alt="">
+                    <h6>Jessy</h6>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="days">Last updated 3 mins ago</p>
+                </li>
+                <li class="joint_list dflex-col"><img src="images/jointE02.png" alt="">
+                    <h6>Karen</h6>
+                    <p> This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="days">Last updated 3 mins ago</p>
+                </li>
+                <li class="joint_list dflex-col"><img src="images/jointE03.png" alt="">
+                    <h6>Chelsea</h6>
+                    <p> This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="days">Last updated 3 mins ago</p>
+                </li>
+                <li class="joint_list dflex-col"><img src="images/jointE04.png" alt="">
+                    <h6>Jane</h6>
+                    <p> This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="days">Last updated 3 mins ago</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="connection pink">
+        <div class="container">
+            <form class="m0a">
+                <h2>聯絡我們</h2>
+                <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p><label> 姓名<input type="text" placeholder="姓名"></label><label> 聯絡電話<input type="tel" placeholder="0912-345-678"></label><label> 電子郵件<input type="email" placeholder="example@email.com"></label><label> 意見反應<textarea placeholder="請輸入您的意見" rows="4"></textarea></label>
+                <label
+                    class="checkbox-label"><input type="checkbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label><input class="AA0601 button" type="button" value="確認送出"></form>
+        </div>
+    </div>
+    <footer class="AA0601">
+        <div class="container dflex-col">
+            <div class="footerUl dflex-jcsb">
+                <ul class="footer-leftMenu dflex-aic">
+                    <li><a href="" target="_blank">首頁</a></li>
+                    <li><a href="" target="_blank">系列鏡框</a></li>
+                    <li><a href="" target="_blank">門市據點</a></li>
+                    <li><a href="" target="_blank">門市據點</a></li>
+                    <li><a href="" target="_blank">常見問題</a></li>
+                </ul>
+                <ul class="footer-rightMenu dflex-aic ml-auto">
+                    <li><a href="" target="_blank"> <img src="images/footer-fb.svg"></a></li>
+                    <li><a href="" target="_blank"> <img src="images/footer-ig.svg"></a></li>
+                    <li><a href="" target="_blank"> <img src="images/footer-line.svg"></a></li>
+                </ul>
+            </div>
+            <h5><img src="images/footer-phone.svg">0800-000-000</h5>
+            <h5><img src="images/footer-mail.svg">glasses@business.com</h5>
+            <div class="copyright dflex-jcsb df-aic">
+                <div class="footerEnd-left d-ib"><img src="images/footer-new.png">Copyright © 2020 Glasses.All rights reserved.</div>
+                <ul class="footerEnd-right d-ib">
+                    <li class="d-ib"><a href="" target="_blank">隱私權政策</a></li>
+                    <li class="d-ib"><a href="" target="_blank">服務條款</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

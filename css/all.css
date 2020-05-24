@@ -1,0 +1,96 @@
+/* *{
+	border: 1px solid rgba(0, 0, 0, 0.5);
+} */
+html{
+	font-size: 16px;
+}
+body{
+	background:white;
+	position: relative;
+	color: black;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	font-family: "微軟正黑體","Helvetica", "Arial","LiHei Pro","黑體-繁", sans-serif;
+	/* font-family: -apple-system, BlinkMacSystemFont,"Microsoft JhengHei", "Segoe UI","Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" ; */
+}
+/* hr{
+	border:none;
+	border-bottom: 4px solid orange;
+	width: 50px;
+	margin-left: 0;
+} */
+
+/* class */
+.m0a{
+	margin: 0 auto;
+}
+.d-ib{
+	display: inline-block;
+}
+.d-b{
+	display: block;
+}
+.mr-auto{
+    margin-right:auto;
+}
+.ml-auto{
+    margin-left:auto;
+}
+.ta-c{
+    text-align: center;
+}
+.h100{
+    height: 100%;
+}
+.poa-center{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* flex */
+.dflex{
+	display: flex;
+}
+.d-none{
+	display: none;
+}
+.dflex-jcsb{
+	display: flex;
+	justify-content: space-between;
+}
+.dflex-aic{
+	display: flex;
+	align-items: center;
+}
+.dflex-col{
+	display: flex;
+	flex-direction: column;
+}
+/* flex細項 */
+.df-img100 img{
+	width: 100%;
+}
+.df-aic{
+	align-items: center;
+}
+.df-wrap{
+	flex-wrap: wrap;
+}
+
+/* ::after ::before */
+.content{
+	content:'';
+	display: block;
+}
+
+/* 容器 */
+.container{
+	max-width: 1200px;
+	padding: 0 20px;
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,460 @@
+/* 共同 */
+body{
+    color: #650300;
+}
+body p{
+    color: black;
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+.pink{
+    background: #AA06010D;
+    padding-bottom: 80px;
+}
+.AA0601,.AA0601 a{
+    background-color: #AA0601;
+    color: white;
+}
+.pb60{
+    padding-bottom: 60px;
+}
+
+h2{
+    font-size: 3rem;
+    padding: 64px 0;
+    text-align: center;
+}
+h2.t_white{
+    color:#fff;
+}
+h4{
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+/* header */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navUl{
+    padding: 0 88px;
+    height: 106px;
+}
+.navUl li{
+    padding: 0 32px;
+}
+
+/* .banner */
+.banner{
+    position: relative;
+}
+.bannerImg img{
+    width: 100%;
+}
+.banner .h1_ab{
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner h1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    font-size:4rem;
+    line-height: 1em;
+}
+.banner h1 .span{
+    font-size: 50%;
+    display: block;
+}
+
+
+/* .features */
+ul.features_ul li{
+    flex:1;
+    padding: 0 37px 24px 37px ;
+}
+ul.features_ul li img{
+    height: 100px;
+    object-fit: none;
+    margin-bottom: 25px;
+}
+
+/* .classic */
+.classic_ul h3{
+    font-size: 3rem;
+    color: #AA0601;
+    font-weight: 800;
+    transform: skew(-10deg);
+}
+.classic_ul li div{
+    padding: 0 5px;
+}
+.classic .icon{
+    flex:420px 0 0;
+}
+
+/* .joint */
+   /* .jointBox-top */
+.container13{
+    max-width: calc(1200px*1.3);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.joint{
+    background:url('../images/joint_bg.png') center -300px no-repeat;
+    background-size: cover;
+}
+.joint img:not(.d-ib){
+    display: block; /*以避免出現img下方空白*/
+}
+.jointBox-top img:not(.nowidth100){
+    width: 100%;
+    min-height: 100%;
+}
+.b-transparent{
+    border: 5px solid transparent;
+}
+.bb-transparent{
+    border-bottom: 10px solid transparent;
+}
+.br-transparent{
+    border-right: 10px solid transparent;
+}
+.jointBox-top .w317{
+    position: relative;
+    background: url('../images/joint05.png') left center no-repeat;
+}
+.jointBox-top .whitebox{
+    width: 200%;
+    background-color: #fff;
+    font-size: 4.5rem;
+    padding: 15px 30px;
+    margin-left: 20px;
+}
+   /* .joint_m */
+.joint_m>div{
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 89px;
+    margin-top: 60px;
+    flex:0 0 49%;
+}
+.joint_m>div img{
+    opacity: 0.5;
+}
+.joint_m h5{
+    font-size: 4.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+   /* li.joint_list */
+/* ul.joint_e{
+    margin-bottom: 80px;
+} */
+ul.joint_e{
+    margin-bottom: 50px;
+}
+li.joint_list{
+    background-color: #fff;
+    border: 1px solid #DEE2E6 ;
+    flex: 0 0 23%;
+}
+li.joint_list h6{
+    margin: 15px;
+}
+li.joint_list p{
+    margin: 0 15px 15px 15px;
+}
+li.joint_list p:last-child{
+    color: #707070;
+}
+li.joint_list img{
+    object-fit: cover;
+}
+
+
+/* .connection */
+.connection form{
+    width: 80%;
+    color: black;
+}
+.connection form p{
+    font-size:125%;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+}
+.connection form input:not([type="checkbox"]):not([type="button"]),.connection form textarea{
+    padding: 8px;
+    margin: 1px 0 15px 0;
+}
+.connection .button{
+    background-color: #AA0601;
+    color:#fff;
+    display: block;
+    padding: 16px 58px;
+    text-align: center;
+    margin: 40px auto 0;
+    font-size: 1rem;
+}
+.connection input:not([type="checkbox"]):not([type="button"]),.connection textarea{
+    display:block;
+    width: 100%;
+    background-color: transparent;
+    padding:14px;
+}
+.connection input[type="checkbox"]{
+    border: 1px solid #bbb;
+}
+/* .checkbox改樣式-------------------------------- */
+.checkbox-label {
+    margin: 0 3px 0 0;
+    padding: 0;
+    vertical-align:middle;
+}
+input[type=checkbox]{
+    margin: 0;
+    margin-right: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    vertical-align: center;
+    background: transparent;
+    border: 1px solid black;
+    position: relative;
+}
+input[type=checkbox]:checked::after {
+    content: "\2713";
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 0;
+    bottom: 0;
+    /* transform: translate(-50%,-50%); */
+    width: 18px;
+    height: 18px;
+    /* line-height: 1em; */
+    color: red;
+    font-size: 16px;
+}
+/* --------------------------------.checkbox改樣式 */
+
+/* footer */
+footer{
+    padding: 50px 0 30px;
+}
+footer h5{
+    font-size: 2.25rem;
+    line-height: 2em;
+}
+footer h5 img,.footerEnd-left img{
+    vertical-align: middle;
+    margin-right: 15px;
+}
+footer h5:nth-child(3){
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+ul.footer-leftMenu li:not(:first-child) a,ul.footer-rightMenu li:not(:last-child) a{
+    padding: 0 11px;
+}
+footer hr{
+    margin-bottom: 25px;
+}
+
+@media(max-width: 1220px){
+    .banner .h1_ab{
+        transform: translateX(-50%) scale(0.8);
+    }
+    ul.features_ul li{
+        flex: 50%;
+    }
+    .jointBox-top .whitebox{
+        font-size: 3rem;
+    }
+    .jointBox-top .whitebox img{
+        vertical-align: text-top;
+    }
+    .joint_m h5{
+        font-size: 3.5rem;
+    }
+}
+@media(max-width: 1000px){
+    .classic ul li{
+        flex-direction: column;
+    }
+    .classic .icon{
+        flex:initial;
+        padding: 15px 0 35px;
+    }
+    .classic li:nth-child(2) .icon{
+        order:10;
+    }
+
+}
+/* ipad直式 */
+@media(max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    .joint_m h5{
+        font-size: 2.8rem;
+    }
+    li.joint_list{
+        flex: 0 0 49%;
+        margin-bottom: 20px;
+    }
+    nav.click.phoneNav .navUl{
+        height: 100vh;
+    }
+    nav.phoneNav .navUl{
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items:stretch;
+        padding: 0;
+        text-align: center;
+    }
+    nav.phoneNav .navUl ul:first-child{
+        margin: 20px 0 31px;
+        display: flex;
+        align-items: center;
+    }
+    nav.phoneNav .navUl ul:first-child li.lines{
+        position: relative;
+    }
+    nav.phoneNav .navUl ul:first-child li.lines div{
+        display: inline-block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-50%);
+        opacity:1;
+        transition: opacity 0s,transform 1s;
+    }
+    nav.phoneNav .navUl ul:first-child li.lines div.line4{
+        height: 30px;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        cursor: pointer;
+    }
+    /* nav.phoneNav .navUl ul:first-child li.lines div.line3::before{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 2px solid blue;
+        position: absolute;
+        transform: translateY(-60%);
+        z-index: 200;
+    } */
+    nav.phoneNav .navUl ul:first-child li.lines div.line1{
+        transform: translate(-50%,-10px);
+    }
+    nav.phoneNav .navUl ul:first-child li.lines div.line3{
+        transform: translate(-50%,10px);
+    }
+    nav.click.phoneNav .navUl ul:first-child li.lines div.line2{
+        opacity: 0;
+    }
+    nav.click.phoneNav .navUl ul:first-child li.lines div.line1{
+        transform: translateX(-50%) rotate(45deg);
+    }
+    nav.click.phoneNav .navUl ul:first-child li.lines div.line3{
+        transform: translateX(-50%) rotate(-45deg);
+    }
+    nav.phoneNav .navUl ul.navMenu{
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f398ab;
+    }
+    nav.phoneNav .navUl ul.navMenu li{
+        padding: 0;
+    }
+    nav.phoneNav .navUl ul.navMenu li a{
+        background-color: #f398ab;
+        display: block;
+        padding: 30px 0;
+        position: relative;
+    }
+    nav.phoneNav .navUl ul.navMenu li a:hover{
+        background-color: #ed6884;
+    }
+    nav.phoneNav .navUl ul.navMenu li a::after{
+        content: "";
+        display: block;
+        background-color: #fff;
+        width: 20%;
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        transform: translateX(-50%);
+    }
+}
+/* 手機 */
+@media(max-width: 767px){
+    .banner .h1_ab{
+        transform: translateX(-40%) scale(0.6);
+        width: 110%;
+    }
+    .jointBox-top .whitebox{
+        font-size: 2rem;
+    }
+    .jointBox-top .whitebox span{
+        vertical-align: sub;
+    }
+    footer .container{
+        align-items: center;
+    }
+    footer h5{
+        font-size: 1.7rem;
+    }
+    .footerUl{
+        flex-direction: column;
+    }
+    .footerUl ul:last-child{
+        order: -1;
+    }
+    .footerUl ul{
+        justify-content: center;
+        margin:0 auto 20px;
+    }
+    .copyright{
+        flex-direction: column;
+    }
+}
+/* 小小手機 */
+@media(max-width: 414px){
+    .connection form{
+        width: 96%;
+    }
+}
+
+/* .sticky-box {
+    position: sticky;
+    height: 60px;
+    margin-bottom: 30px;
+    background: #ff7300;
+    top: 0px;
+} */
+
